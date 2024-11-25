@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrek-Juice</title>
+    <link rel="icon" href="../Images/Logo.png" >
+    <link rel="stylesheet" href="../css/Cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="Navbar">
+      <div class="N-Image">
+        <a href="../Home.html"><img src="../Images/Logo.png" alt=""></a>
+      </div>
+      <div class="List">
+          <ul>
+              <a href="../Home.html"><li>Home</li></a>
+              <a href="../Products.html"><li>Products</li></a>
+              <a href="../Store Location.html"><li>Store Location</li></a>
+              <a href="../Franchising.html"><li>Franchising</li></a>
+              <a href="../Catering.html"><li>Catering</li></a>
+              <a href="../Contact-us.html"><li>Contact</li></a>
+              <a href="../Home.html#Feedback"><li>Feedback</li></a>
+              <a href="../About-us.html"><li>About us</li></a>
+          </ul>
+      </div>
+      <div class="Search">
+          <div class="col M-Menu">
+            <div class="Open"><i class="fas fa-bars"></i></div>
+            <div class="M-Click">
+              <h2><a href="../Home.html">Home</a></h2>
+              <h2><a href="../Products.html">Products</a></h2>
+              <h2><a href="../Store Location.html">Store Location</a></h2>
+              <h2><a href="../Franchising.html">Franchising</a></h2>
+              <h2><a href="../Catering.html">Catering</a></h2>
+              <h2><a href="../Contact-us.html">Contact</a></h2>
+              <h2><a href="../Home.html#Feedback">Feedback</a></h2>
+              <h2><a href="../About-us.html">About us</a></h2>
+            </div>
+          </div>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="far fa-heart Marg"></i>
+          <input type="search" class="input" placeholder="Search">
+          <div style=" position: relative;"><button class="icon"><i class="fas fa-search"></i></button></div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+    
+    <div class="Product">
+      <div class="Cart">
+        <div class="Img">
+          <img src="../Images/Chocolate/p3.jpg" alt="">
+        </div>
+        <div class="Detail">
+          <h1>Chocolate Mint</h1>
+          <div style="color: gold; margin-bottom: 10px;">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            </div>
+            <h3>A delightful fusion of rich cocoa and cool mint for a tantalizing flavor combination.</h3>
+            <div class="Description">
+              <h4>Description</h4>
+              <li>Combines the rich, indulgent taste of chocolate with the refreshing, invigorating flavor of mint.</li>
+              <li>Offers a perfect balance of sweetness and coolness, creating a delightful sensory experience.</li>
+              <li>Provides a versatile flavor profile suitable for various desserts such as cookies, brownies, or ice cream.</li>
+              <li>Refreshes the palate and satisfies cravings, making it a popular choice for after-dinner treats or special occasions.</li>
+            </div>
+            <div class="btn">
+              <button>Small</button>
+              <button>Medium</button>
+              <button>Large</button>
+            </div>
+            <h2>Rs.699</h2>
+            <input type="number" value="1"><br>
+            <button class="Btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Footer Start -->
+<div style="background-color: black;">
+  <div class="container F-H" style="width: 90%;">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 Store">
+        <h2 style="padding:20px 0;">STORE LOCATION</h2>
+        <h4>123,Karachi,Pakistan</h4>
+        <h4>+92 3128765431</h4>
+        <h4>Info@Shrek-Juice.com</h4>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 Store">
+          <h2 style="padding:20px 0;">QUICK LOCATION</h2>
+          <h4>Home</h4>
+          <h4>Products</h4>
+          <h4>Franchising</h4>
+          <h4>Catering</h4>
+          <h4>Feedback</h4>
+          <h4>About us</h4>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 Store">
+          <h2 style="padding:20px 0;">INFORMATION</h2>
+          <h4>Contact Us</h4>
+          <h4>Store Location</h4>
+          <div class="Icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 Ico Store">
+      <h2 style="padding:20px 0;">SUBSCRIBE TO OUR NEWSLETTER</h2>
+      <p>Enter your email address for our mailing list to keep yourself updated.</p>
+      <div class="F-Form">
+      <input type="search" placeholder="Email">
+      <button>Send</button>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background-color: rgba(0, 0, 0, 0.902); padding: 20px 0;"><h3 style="color: white;text-align: center;">Copyright &#169; 2024 all rights reserved by: <span>Shrek-Juice</span></h3></div>
+<!-- Footer End -->
+
+
+
+    <script src="../js/Main.js"></script>
+    <script src="../js/Jquery.js"></script>
+<script>
+  $(document).ready(function() {
+      $('.M-Menu').click(function(){
+      $('.M-Click').slideToggle();
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+@import url(https://fonts.googleapis.com/css?family=Salsa);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'salsa';
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background-color: #dbefc78b;
+}
+.M-Menu{
+    display: none;
+}
+.M-Menu a{
+    text-decoration: none;
+    color: white;
+}
+.M-Menu a:hover{
+    color: #75CA1E;
+}
+.Navbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 5px 40px 0px 40px;
+    gap: 100px;
+}
+.N-Image{
+    width: 12%;
+}
+.N-Image img{
+    width: 100%;
+}
+.List ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.List{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.List li{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s ease all;
+}
+.List li:hover{
+    color: #75CA1E;
+    width: 100%;
+}
+.List a{
+    text-decoration: none;
+    color: black;
+}
+.hide{
+    display: none;
+}
+.Search{
+    width: 8%;
+    justify-content: right;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.Search i:nth-child(2){
+    font-size: 20px;
+    margin-right: 3px; 
+}
+.Search i:nth-child(3){
+    font-size: 20px; 
+    margin-right: 25px;
+    transition: 0.5s ease;  
+}
+.Search button{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:transparent;
+    color: white;
+    border: none;
+    font-size: 20px; 
+    transition: 0.5s ease;
+}
+.input{
+    margin-right: -25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.5s ease all;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+.input-open{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+}
+.Product{
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 5px black;
+}
+.Cart{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Img{
+    width: 30%;
+    margin: 0 30px;
+}
+.Img img{
+    width: 80%;
+}
+.Detail{
+    width: 60%;
+    margin-top: 20px;
+}
+.Detail h1{
+    color: #75CA1E;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.Detail h3{
+    margin-bottom: 10px;
+}
+.Detail h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #75CA1E;
+}
+.Description{
+    margin-bottom: 20px;
+}
+.Description h4{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.Description li{
+    margin: 10px 0;
+}
+.btn button {
+    background-color: lightgray;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.btn button:hover{
+    background-color: #75CA1E;
+}
+.Detail input{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+.Btn{
+    width: 30%;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.Btn:hover{
+    background-color: #75CA1E;
+}
+.Store{
+    font-size: 20px;
+    line-height: 40px;
+}
+.F-H h4:hover{
+    color:#75CA1E;
+}
+.F-H{
+    color: white;
+    background-color: black;
+}
+.F-H i:hover{
+    color:#75CA1E;
+}
+.F-H h2{
+    color: #75CA1E;
+    font-size: 25px;
+}
+.F-Form{
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+.Ico{
+    font-size: 18px;
+    line-height: 25px;
+}
+.Ico button{
+    color: white;
+    padding: 10px 25px;
+    border: 2px solid #75CA1E;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.Ico button:hover{
+    background-color: white;
+    color: black;
+}
+.Ico input{
+    background-color: transparent;
+    border: 2px solid #75CA1E;
+    width: 160px;
+    outline: none;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.Icons i{
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    border:2px solid #75CA1E;
+    transition: 0.5s ease;
+}
+.Icons i:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+@media (max-width:1200px) and (min-width:992px){
+    .input-open{
+        width: 150px;
+        height: 20px;
+        padding: 10px;
+        margin-right: -25px;
+    }
+    .N-Image{
+        width: 10%;
+    }
+    .List{
+        margin-left: -20px;
+        width: 100%;
+    }
+    .N-Image img{
+        width: 150%;
+    }
+    .List ul{
+        gap: 18px;
+    }
+    .List li{
+        font-size: 14px;
+    }
+    .Search i:nth-child(2){
+        font-size: 15px; 
+        margin-right: 0px;  
+    }
+    .Search i:nth-child(3){
+        font-size: 15px;  
+    }
+    .Search button{
+        font-size: 15px; 
+    }
+}  
+ @media (max-width:992px){
+    .List{
+        display: none;
+    }
+    .Navbar{
+        padding: 5px 30px 5px 20px;
+    }
+    .Search{
+        width: 100%;
+    }
+    .M-P{
+        display: block;
+    }
+    .Navbar img{
+        width: 200%;
+    }
+    .M-Menu{
+        position: relative;
+        text-align: right;
+        display: block;
+        z-index: 1;
+    }
+    .M-Click{
+        display: none;
+        width: 150px;
+        font-size: 10px;
+        line-height: 25px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 15px;
+        position: absolute;
+        right:-20px;
+        top: 40px;
+    }
+    .M-Click h2:hover{
+        color: #75CA1E;
+    }
+    .hide{
+        margin: 0;
+        display: block;
+        font-size: 17px;
+    }
+    .Search i:nth-child(2){
+        font-size: 17px;
+    }
+    .Search i:nth-child(3){
+        font-size: 17px;
+    }
+    .Search button{
+        margin: 0;
+        top: 0px;
+        font-size: 17px;
+    }
+    .Cart{
+        flex-direction: column;
+    }
+    .Img{
+        margin: 0 auto;
+    }
+    .Detail{
+        border-top: 1px solid black;
+        width: 100%;
+    }
+    .Detail h1{
+        font-size: 35px;
+    }
+} 
+@media (max-width:480px){
+    .input-open{
+        width: 150px;
+        height: 15px;
+        padding: 10px;
+        margin-right: -25px;
+    }
+    
+    .Detail h1{
+        font-size: 30px;
+    }
+
+}

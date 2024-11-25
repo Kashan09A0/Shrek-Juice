@@ -1,0 +1,660 @@
+@import url(https://fonts.googleapis.com/css?family=Salsa);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'salsa';
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background-color: #dbefc78b;
+}
+.M-Menu{
+    display: none;
+}
+.M-Menu a{
+    text-decoration: none;
+    color: white;
+}
+.M-Menu a:hover{
+    color: #75CA1E;
+}
+.Navbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 5px 40px 0px 40px;
+    gap: 100px;
+}
+.N-Image{
+    width: 12%;
+}
+.N-Image img{
+    width: 100%;
+}
+.List ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.List{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.List li{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s ease all;
+}
+.List li:hover{
+    color: #75CA1E;
+    width: 100%;
+}
+.List a{
+    text-decoration: none;
+    color: black;
+}
+.hide{
+    display: none;
+}
+.Search{
+    width: 8%;
+    justify-content: right;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.Search i:nth-child(2){
+    font-size: 20px;
+    margin-right: 3px; 
+}
+.Search i:nth-child(3){
+    font-size: 20px; 
+    margin-right: 25px;
+    transition: 0.5s ease;  
+}
+.Search button{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:transparent;
+    color: white;
+    border: none;
+    font-size: 20px; 
+    transition: 0.5s ease;
+}
+.input{
+    margin-right: -25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.5s ease all;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+.input-open{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+}
+.Slider img{
+    width: 100%;
+}
+.Products-C{
+    display: flex;
+    flex-wrap: wrap;
+}
+.P-Category{
+    margin-top: -5px ;
+    padding: 40px 0 0 0;
+    user-select: none;
+}
+.P-Category h1{
+    margin-bottom: 70px;
+    font-size: 45px;
+    text-align: center;
+}
+.P-Category h2{
+    text-align: center; 
+    margin-top: 30px;
+}
+.P-Category span{
+    color: #75CA1E;
+}
+.Products-C{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.P-Category{
+    margin-top: -5px ;
+    padding: 40px 0 0 0;
+    user-select: none;
+}
+.Rel{
+    text-align: center;
+    width: 18%;
+}
+.Rel img{
+    width: auto;
+}
+.P-Category img:hover{
+    animation: rotate 0.3s 2 linear;
+}
+.Rel{
+    position: relative;
+}
+.Circle{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    box-shadow: 0px 0px 5px black;
+}
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 15deg;
+    }
+    50%{
+        rotate:0deg;
+    }
+    75%{
+        rotate: -15deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+.Cards{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 25%;
+    padding: 390px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    text-align: center;
+}
+.Cards-Heading{
+    margin-top: 80px; 
+    text-align: center; 
+    font-size: 45px
+}
+ .card img{
+    object-fit: scale-down;
+    height: 70%;
+    position: absolute;
+    left: 50px;
+    z-index: 100;
+    top: 10px;
+    width: 70%;
+    transition: 0.5s ease;
+}
+.card h3{
+    padding-top: 10px;
+    font-size: 25px;
+    color: #75CA1E;
+}
+.card i{
+    margin: 7px 0;
+}
+.card img:nth-child(2){
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    scale: 0.1;
+    top: 1px;
+}
+.card:hover > :nth-child(2){
+    scale: 0.9;
+} 
+.Process-h1{
+    margin: 80px 0 0px 0; 
+    text-align: center; 
+    font-size: 45px
+}
+.pad{
+    padding-top: 70px; 
+    text-align: right;
+}
+.Process h2{
+    color: #75CA1E;
+    margin-bottom: 20px;
+}
+.Lap{
+    margin-bottom: 70px;
+}
+.V-Slide img{
+    margin-left: 25%;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+.height img{
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+.Feedback{
+    padding: 30px;
+}
+.Feedback h2{
+    text-align: center;
+    font-size: 35px;
+    color: #75CA1E;
+}
+.Feedback form{
+    margin: 40px 20px 0 30px;
+    font-size: 20px;
+}
+.Form-Ani {
+    display: flex;
+    position: relative;
+}
+.F-Input {
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(222, 222, 222, 0.432);
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 40px;
+}
+.F-Input1{
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(222, 222, 222, 0.432);
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 30px;
+}
+.label{
+    position: absolute;
+    top: 12px;
+    left: 10px; 
+    transition: 0.3s ease;
+    color: gray;
+}
+.F-Input1:focus + .label {
+    top: -27px;
+    color: black;
+}
+.F-Input:focus + .label {
+    top: -24px;
+    color: black;
+}
+
+.button span{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    color: red;
+}
+.button{
+    text-align: center;
+}
+.button input{
+    margin-top: 0px;
+    background-color: #75CA1E;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.button input:hover{
+    background-color: black;
+    color: #75CA1E;
+}
+.F-back{
+    margin: 60px 0; 
+    text-align: center; 
+    font-size: 45px
+}
+.f-slider{
+  display: flex;  
+} 
+.f-slider-Set{
+    margin: 20px 20px 70px 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 20px;
+    padding: 10px 20px;  
+    color: #75CA1E;
+}
+.f-slider-Set p{
+    color: black;
+    max-height: 200px;
+    line-height: 23px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    margin: 10px 0;
+    -webkit-box-orient: vertical;   
+}
+.Store{
+    font-size: 20px;
+    line-height: 40px;
+}
+.F-H h4:hover{
+    color:#75CA1E;
+}
+.F-H{
+    color: white;
+    background-color: black;
+}
+.F-H i:hover{
+    color:#75CA1E;
+}
+.F-H h2{
+    color: #75CA1E;
+    font-size: 25px;
+}
+.F-Form{
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+.Ico{
+    font-size: 18px;
+    line-height: 25px;
+}
+.Ico button{
+    color: white;
+    padding: 10px 25px;
+    border: 2px solid #75CA1E;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.Ico button:hover{
+    background-color: white;
+    color: black;
+}
+.Ico input{
+    background-color: transparent;
+    border: 2px solid #75CA1E;
+    width: 160px;
+    outline: none;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.Icons i{
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    border:2px solid #75CA1E;
+    transition: 0.5s ease;
+}
+.Icons i:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+
+@media (max-width:1200px) and (min-width:992px){
+    .input-open{
+        width: 150px;
+        height: 20px;
+        padding: 10px;
+        margin-right: -25px;
+    }
+    .N-Image{
+        width: 10%;
+    }
+    .List{
+        margin-left: -20px;
+        width: 100%;
+    }
+    .N-Image img{
+        width: 150%;
+    }
+    .List ul{
+        gap: 18px;
+    }
+    .List li{
+        font-size: 14px;
+    }
+    .Search i:nth-child(2){
+        font-size: 15px; 
+        margin-right: 0px;  
+    }
+    .Search i:nth-child(3){
+        font-size: 15px;  
+    }
+    .Search button{
+        font-size: 15px; 
+    }
+    .card p{
+        font-size: 13px;
+        line-height: 15px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .Process img{
+        margin-top: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .Lap{
+        margin-bottom: 20px;
+    }
+    .Lap p{
+        line-height: 17px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .Lap h2{
+        margin: 0 0 5px 0;
+    }
+    .pad{
+        padding-top: 30px;
+    }
+    .F-back{
+        margin: 40px 0 30px 0;
+    }
+    .height{
+        height: 100%;
+    }
+    .Feedback h2{
+        
+        font-size: 30px;
+    }
+    .Slider img{
+        width: 100%;
+        height: 115vh;
+    }
+    .Size{ 
+        padding-right: 30px;
+    }
+    
+}  
+@media (max-width:992px){
+    .List{
+        display: none;
+    }
+    .Navbar{
+        padding: 5px 30px 5px 20px;
+    }
+    .Search{
+        width: 100%;
+    }
+    .M-P{
+        display: block;
+    }
+    .Navbar img{
+        width: 200%;
+    }
+    .M-Menu{
+        position: relative;
+        text-align: right;
+        display: block;
+    }
+    .M-Click{
+        text-align: right;
+        display: none;
+        width: 150px;
+        font-size: 10px;
+        line-height: 25px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 15px;
+        position: absolute;
+        right:-80px;
+        top: 40px;
+    }
+    .M-Click h2:hover{
+        color: #75CA1E;
+    }
+    .hide{
+        margin: 0;
+        display: block;
+        font-size: 17px;
+    }
+    .Search i:nth-child(2){
+        font-size: 17px;
+    }
+    .Search i:nth-child(3){
+        font-size: 17px;
+    }
+    .Search button{
+        margin: 0;
+        top: 0px;
+        font-size: 17px;
+    }
+    .P-Category{
+        width: 100%;
+    }
+    .Rel{
+        width: 30%;
+    }
+    .Process-h1{
+        font-size: 35px
+    }
+    .Lap{
+        margin-bottom: 20px;
+    }
+    .Lap h2{
+        margin: 0 0 5px 0;
+    }
+    .pad{
+        font-size: 10px;
+        padding-top: 0;
+    }
+    .card{
+        width: 43%;
+        padding-top: 370px;
+    }
+    .F-back{
+        font-size: 35px;
+    }
+    .Feedback h2{
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+    .F-Input{
+        height: 20px;
+        margin-bottom: 30px;
+    }
+    .label{
+        top: 8px;
+    }
+    .Feedback form{
+    margin:0 20px 0 0;
+    font-size: 20px;
+    }
+
+} 
+@media (max-width:768px){
+    .Feedback form{
+        margin:20px;
+    }
+}
+@media (max-width:665px){
+    .card{
+        width: 70%;
+    }
+} 
+@media (max-width:480px){
+    .input-open{
+        width: 150px;
+        height: 15px;
+        padding: 10px;
+        margin-right: -25px;
+    }
+    .N-Image{
+        width: 10%;
+    }
+    .N-Image img{
+        width: 250%;
+    }
+    .P-Category h1{
+        font-size: 30px;
+    }
+    .Circle{
+        width: 90px;
+        height: 90px;
+    }
+    .Rel img{
+        width: 45%;
+    }
+    .Rel h2{
+        font-size: 18px;
+    }
+    .Cards-Heading{
+        font-size: 30px;
+    }
+    .Lap h2{
+        font-size: 11px;
+    }
+    .Lap p{
+        font-size: 8px;
+    }
+}
+img:nth-child(2){
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+ 

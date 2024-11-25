@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrek-Juice</title>
+    <link rel="icon" href="./Images/Logo.png" >
+    <link rel="stylesheet" href="./css/Catering.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="Navbar">
+      <div class="N-Image">
+        <a href="./Home.html"><img src="./Images/Logo.png" alt=""></a>
+      </div>
+      <div class="List">
+          <ul>
+              <a href="./Home.html"><li>Home</li></a>
+              <a href="./Products.html"><li>Products</li></a>
+              <a href="./Store Location.html"><li>Store Location</li></a>
+              <a href="./Franchising.html"><li>Franchising</li></a>
+              <a href="./Catering.html"><li>Catering</li></a>
+              <a href="./Contact-us.html"><li>Contact</li></a>
+              <a href="./Home.html#Feedback"><li>Feedback</li></a>
+              <a href="./About-us.html"><li>About us</li></a>
+          </ul>
+      </div>
+      <div class="Search">
+        <div class="col M-Menu">
+          <div class="Open"><i class="fas fa-bars"></i></div>
+          <div class="M-Click">
+            <h2><a href="./Home.html">Home</a></h2>
+            <h2><a href="./Products.html">Products</a></h2>
+            <h2><a href="./Store Location.html">Store Location</a></h2>
+            <h2><a href="./Franchising.html">Franchising</a></h2>
+            <h2><a href="./Catering.html">Catering</a></h2>
+            <h2><a href="./Contact-us.html">Contact</a></h2>
+            <h2><a href="./Home.html#Feedback">Feedback</a></h2>
+            <h2><a href="./About-us.html">About us</a></h2>
+          </div>
+        </div>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="far fa-heart Marg"></i>
+          <input type="search" class="input" placeholder="Search">
+          <div style=" position: relative;"><button class="icon"><i class="fas fa-search"></i></button></div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+    
+    <div class="C-Image">
+      <img src="Images/b-4.jpg" alt="">
+      <div class="Banner">
+        <h2 >Wholesome Goodness | Shrek-Juice Catering</h2> 
+        <h1>Add a touch of wellness to your next event with our juice catering services, which offers a visually stunning display of flavorful blends. Simply provide us with the details of your upcoming event, and we'll handle everything else!</h1>    
+      </div>
+    </div> 
+
+
+<div class="Catering">
+  <h1>Order Details</h1>
+  <form id="Form">
+    <div class="Form-Ani">
+      <input type="number" min="100" max="500" class="F-Input" id="nameInput">
+      <label class="label" id="nameLabel">How many people will we be serving?</label>
+    </div>
+    <h2>Select products you would like to have:</h2>
+      <div class="checkbox"><input type="checkbox"><label>Greens 2 | Apple Lemon Kale Juice</label></div>
+      <div class="checkbox"><input type="checkbox"><label>Citrus 2 | Apple Pineapple Lemon Juice</label></div>
+      <div class="checkbox"><input type="checkbox"><label>Roots 3 | Apple Ginger Beet Juice</label> </div>
+      <div class="checkbox"><input type="checkbox"><label>Orange Turmeric Juice</label> </div>
+      <div class="checkbox"><input type="checkbox"><label>Strawberry Orange Mango Smoothie</label> </div>
+      <div class="checkbox"><input type="checkbox"><label>Beauty Shot</label> </div>
+      <div class="checkbox"><input type="checkbox"><label>Immunity Shot</label> </div>
+      <div class="checkbox"><input type="checkbox"><label>Immunity Shot</label> </div>
+      <div class="checkbox"><input type="checkbox"><label>Energy Shot</label></div>
+      <div class="checkbox"><input type="checkbox"><label>Elderberry Shot</label> </div><br>
+   <div class="Specail"><h2>Special Requests</h2>
+    <input type="text" class="F-Input" id="nameInput" placeholder="E.g. allergy restrictions, item quantities, etc..."></div>
+   <br>
+   <h1>Fulfillment Method</h1>
+   <h2>How would you like to receive your order? </h2>
+    <div class="Flex">
+      <div class="Radio"><input type="radio" name="Method"><label>Pickup</label></div>
+      <div class="Radio"><input type="radio" name="Method"><label>Delivery</label></div>
+    </div>
+    <br>
+    <br>
+    <p>Please note, all catering services are not extended to addresses beyond a 15-mile radius from a Shrek-Juice Store</p>
+    <br>
+    <h2>Event Address</h2><br>
+    <div class="Form-Ani">
+      <input type="text" class="F-Input" id="StreetInput">
+      <label class="label" id="StreetLabel">Street Address</label>
+    </div>
+    <div class="Form-Ani">
+      <input type="number" class="F-Input" id="ContactInput">
+      <label class="label" id="ContactLabel">Contact No.</label>
+    </div>
+    <div class="Flex-Address">
+      <div class="Form-Ani">
+        <input type="text" class="F-Input" id="CityInput">
+        <label class="label" id="CityLabel">City</label>
+      </div>
+      <div class="Form-Ani">
+        <input type="text" class="F-Input" id="StateInput">
+        <label class="label" id="StateLabel">State/Province</label>
+      </div>
+      <div class="Form-Ani">
+        <input type="text" class="F-Input" id="ZipInput">
+        <label class="label" id="ZipLabel">Zip Code</label>
+      </div>
+    </div>
+    <div class="Date">
+      <div class="Time">
+        <h2>Event Date</h2>
+        <input type="date" id="Date">
+      </div>
+    <div class="Time">
+      <h2>Delivery or Pick-Up Time</h2>
+    <select name="Time" id="Time">
+      <option value="7:00 to 8:00">7:00 to 8:00</option>
+      <option value="8:00 to 9:00">8:00 to 9:00</option>
+      <option value="9:00 to 10:00">9:00 to 10:00</option>
+      <option value="10:00 to 11:00">10:00 to 11:00</option>
+      <option value="11:00 to 12:00">11:00 to 12:00</option>
+      <option value="12:00 to 1:00">12:00 to 1:00</option>
+    </select>
+    </div>
+    </div><br><br><br>
+    <div style="text-align: center; color: red; margin: 10px 0;"><span></span></div>
+    <div class="button"><input type="button" onclick="check()" value="Submit"></div>
+  </form> 
+</div>
+
+<!-- Footer Start -->
+<div style="background-color: black;">
+  <div class="container F-H" style="width: 90%;">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 Store">
+        <h2 style="padding:20px 0;">STORE LOCATION</h2>
+        <h4>123,Karachi,Pakistan</h4>
+        <h4>+92 3128765431</h4>
+        <h4>Info@Shrek-Juice.com</h4>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 Store">
+          <h2 style="padding:20px 0;">QUICK LOCATION</h2>
+          <h4>Home</h4>
+          <h4>Products</h4>
+          <h4>Franchising</h4>
+          <h4>Catering</h4>
+          <h4>Feedback</h4>
+          <h4>About us</h4>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 Store">
+          <h2 style="padding:20px 0;">INFORMATION</h2>
+          <h4>Contact Us</h4>
+          <h4>Store Location</h4>
+          <div class="Icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 Ico Store">
+      <h2 style="padding:20px 0;">SUBSCRIBE TO OUR NEWSLETTER</h2>
+      <p>Enter your email address for our mailing list to keep yourself updated.</p>
+      <div class="F-Form">
+      <input type="search" placeholder="Email">
+      <button>Send</button>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background-color: rgba(0, 0, 0, 0.902); padding: 20px 0;"><h3 style="color: white;text-align: center;">Copyright &#169; 2024 all rights reserved by: <span>Shrek-Juice</span></h3></div>
+<!-- Footer End -->
+
+
+
+    <script src="./js/Catering.js"></script>
+    <script src="./js/Main.js"></script>
+    <script src="./js/Jquery.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.M-Menu').click(function(){
+          $('.M-Click').slideToggle();
+        });
+      });
+      </script>
+
+
+
+</body>
+</html>
